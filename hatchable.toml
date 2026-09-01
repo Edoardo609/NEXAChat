@@ -1,0 +1,8 @@
+[auth]
+enabled = false
+
+[[secret]]
+name = "GROQ_API_KEY"
+required = true
+expose = true
+description = "Groq API key used by ChatNEXA for AI responses."

@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS chatnexa_memories (id BIGSERIAL PRIMARY KEY,user_id TEXT NOT NULL,content TEXT NOT NULL,created_at TIMESTAMP NOT NULL DEFAULT now(),updated_at TIMESTAMP NOT NULL DEFAULT now()); CREATE INDEX IF NOT EXISTS chatnexa_memories_user_idx ON chatnexa_memories(user_id, updated_at DESC);
